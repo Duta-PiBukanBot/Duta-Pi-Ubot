@@ -1,5 +1,5 @@
 {
-  "name": "TOD-UBOT",
+  "name": "Duta-Pi-Ubot",
   "description": "Shut up, couse this is just a couple of code",
   "logo": "https://telegra.ph/file/902492291f182109319ee.png",
   "keywords": [
@@ -7,7 +7,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/hitokizzy/TOD-UBOT/",
+  "repository": "https://github.com/Duta-PiBukanBot/Duta-Pi-Ubot",
   "stack" : "container",
   "env": {
     "ALIVE_NAME": {
