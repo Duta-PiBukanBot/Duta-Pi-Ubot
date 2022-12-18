@@ -97,12 +97,12 @@ async def plugininfo(input_str, event, flag):
 
 
 async def grpinfo():
-    outstr = "**Plugins in TODUBOT are:**\n\n"
+    outstr = "**Plugins in Duta-Pi-Ubot are:**\n\n"
     outstr += f"**Usage : ** `{cmdprefix}help <plugin name>`\n\n"
     category = ["admin", "bot", "fun", "misc", "tools", "utils", "extra"]
     for tod in category:
-        plugins = GRP_INFO[tod]
-        outstr += f"**{emoji[tod]} {tod.title()} **({len(plugins)})\n"
+        plugins = GRP_INFO[Duta-Pi-Ubot]
+        outstr += f"**{emoji[Duta-Pi-Ubot]} {Duta-Pi-Ubot.title()} **({len(plugins)})\n"
         for plugin in plugins:
             outstr += f"`{plugin}`  "
         outstr += "\n\n"
@@ -110,11 +110,11 @@ async def grpinfo():
 
 
 async def cmdlist():
-    outstr = "**Total list of Commands in your TODUBOT are :**\n\n"
+    outstr = "**Total list of Commands in your Duta-Pi-Ubot are :**\n\n"
     category = ["admin", "bot", "fun", "misc", "tools", "utils", "extra"]
     for tod in category:
-        plugins = GRP_INFO[tod]
-        outstr += f"**{emoji[tod]} {tod.title()} ** - {len(plugins)}\n\n"
+        plugins = GRP_INFO[Duta-Pi-Ubot]
+        outstr += f"**{emoji[Duta-Pi-Ubot]} {Duta-Pi-Ubot.title()} ** - {len(plugins)}\n\n"
         for plugin in plugins:
             cmds = PLG_INFO[plugin]
             outstr += f"• **{plugin.title()} has {len(cmds)} commands**\n"
@@ -129,7 +129,7 @@ async def cmdlist():
     pattern="help ?(-c|-p|-t)? ?([\s\S]*)?",
     command=("help", plugin_category),
     info={
-        "header": "To get guide for TODUBOT.",
+        "header": "To get guide for Duta-Pi-Ubot.",
         "description": "To get information or guide for the command or plugin",
         "note": "if command name and plugin name is same then you get guide for plugin. So by using this flag you get command guide",
         "flags": {
@@ -145,7 +145,7 @@ async def cmdlist():
     },
 )
 async def _(event):
-    "To get guide for TODUBOT."
+    "To get guide for Duta-Pi-Ubot."
     flag = event.pattern_match.group(1)
     input_str = event.pattern_match.group(2)
     reply_to_id = await reply_id(event)
@@ -196,7 +196,7 @@ async def _(event):
             outstr += f"  - `{cmdprefix}{cmd}`\n"
         outstr += f"**Usage : ** `{cmdprefix}help -c <command name>`"
     await edit_or_reply(
-        event, outstr, aslink=True, linktext="Total Commands of TODUBOT are :"
+        event, outstr, aslink=True, linktext="Total Commands of Duta-Pi-Ubot are :"
     )
 
 
