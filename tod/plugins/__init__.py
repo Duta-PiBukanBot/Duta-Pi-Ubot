@@ -18,7 +18,7 @@ from ..helpers import *
 from ..helpers.utils import _format, _sadtools, _sadutils, install_pip, reply_id
 
 # =================== CONSTANT ===================
-bot = tod
+bot = Duta-Pi-Ubot
 LOGS = logging.getLogger(__name__)
 USERID = tod.uid if Config.OWNER_ID == 0 else Config.OWNER_ID
 ALIVE_NAME = Config.ALIVE_NAME
@@ -33,7 +33,7 @@ HEROKU_API_KEY = Config.HEROKU_API_KEY
 
 thumb_image_path = os.path.join(Config.TMP_DOWNLOAD_DIRECTORY, "thumb_image.jpg")
 
-USERID = tod.uid if Config.OWNER_ID == 0 else Config.OWNER_ID
+USERID = Duta-Pi-Ubot.uid if Config.OWNER_ID == 0 else Config.OWNER_ID
 
 # mention user
 mention = f"[{Config.ALIVE_NAME}](tg://user?id={USERID})"
