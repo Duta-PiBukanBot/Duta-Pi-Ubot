@@ -64,7 +64,7 @@ async def check_bot_started_users(user, event):
         await event.client.send_message(BOTLOG_CHATID, notification)
 
 
-@tod.bot_cmd(
+@Duta-Pi-Ubot_cmd(
     pattern=f"^/start({botusername})?([\s]+)?$",
     incoming=True,
     func=lambda e: e.is_private,
@@ -106,11 +106,11 @@ async def bot_start(event):
             start_msg = f"Hey! 👤{mention},\
                         \nI am {my_mention}'s assistant bot.\
                         \nYou can contact to my master from here.\
-                        \n\nPowered by [RAM](https://t.me/ramsupportt), [Geez](https://t.me/GeezSupport)"
+                        \n\nPowered by [Duta](https://t.me/CallMee_Duta), [Geez](https://t.me/GeezSupport)"
                     
         buttons = [
             (
-                Button.url("Repo", "https://github.com/hitokizzy/TOD-UBOT"),
+                Button.url("Repo", "https://github.com/Duta-PiBukanBot/Duta-Pi-Ubot"),
                 Button.url(
                     "Deploy",
                     "https://xnxx.com",
@@ -197,7 +197,7 @@ async def bot_pms(event):  # sourcery no-metrics
                     )
 
 
-@tod.bot_cmd(edited=True)
+@Duta-Pi-Ubot_cmd(edited=True)
 async def bot_pms_edit(event):  # sourcery no-metrics
     chat = await event.get_chat()
     if check_is_black_list(chat.id):
@@ -291,7 +291,7 @@ async def handler(event):
                 LOGS.error(str(e))
 
 
-@tod.bot_cmd(pattern="^/uinfo$", from_users=Config.OWNER_ID)
+@Duta-Pi-Ubot_cmd(pattern="^/uinfo$", from_users=Config.OWNER_ID)
 async def bot_start(event):
     reply_to = await reply_id(event)
     if not reply_to:
