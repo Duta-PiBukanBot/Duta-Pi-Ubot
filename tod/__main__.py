@@ -12,7 +12,7 @@ from .utils import (
     verifyLoggerGroup,
 )
 
-LOGS = logging.getLogger("todubot")
+LOGS = logging.getLogger("Duta-Pi-Ubot")
 
 #print(tod.__copyright__)
 #print("Licensed under the terms of the " + tod.__license__)
@@ -20,9 +20,9 @@ LOGS = logging.getLogger("todubot")
 cmdhr = Config.COMMAND_HAND_LER
 
 try:
-    LOGS.info("Starting tod Userbot")
+    LOGS.info("Starting Duta-Pi-Ubot Userbot")
     tod.loop.run_until_complete(setup_bot())
-    LOGS.info("tod Userbot Startup Completed")
+    LOGS.info("Duta-Pi-Ubot Userbot Startup Completed")
 except Exception as e:
     LOGS.error(f"{e}")
     sys.exit()
@@ -41,7 +41,7 @@ async def startup_process():
     await load_plugins("plugins")
     await load_plugins("assistant")
     print("➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖")
-    print("tod Userbot is officially working.!!!")
+    print("Duta-Pi-Ubot Userbot is officially working.!!!")
     print(
         f"Congratulation, now type {cmdhr}alive to see message if tod Userbot is live\
         \nIf you need assistance, head to https://t.me/Kang_keong17"
