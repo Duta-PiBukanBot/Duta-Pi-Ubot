@@ -209,7 +209,7 @@ async def demote(event):
         await event.client(EditAdminRequest(event.chat_id, user.id, newrights, rank))
     except BadRequestError:
         return await sadevent.edit(NO_PERM)
-    await sadevent.edit("`Demoted Successfully! Betterluck next time`")
+    await sadevent.edit("`Demoted Successfully By Duta! Betterluck next time`")
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID,
