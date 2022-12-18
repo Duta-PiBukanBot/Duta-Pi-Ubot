@@ -20,7 +20,7 @@ async def _(event):
     await asyncio.sleep(3)
     await event.edit("CAKEP...")
     await asyncio.sleep(0.5)
-    await event.edit("JANGAN MAMPIR KE RUMAH RAMA")
+    await event.edit("JANGAN MAMPIR KE RUMAH DUTA")
     await asyncio.sleep(3)
     await event.edit("CAKEP...")
     await asyncio.sleep(0.5)
@@ -62,31 +62,31 @@ async def _(event):
 
 
 @tod.tod_cmd(
-    pattern="kenari$",
-    command=("kenari", plugin_category),
+    pattern="saka$",
+    command=("saka", plugin_category),
     info={
         "header": "Fun animation try yourself to see.",
-        "usage": "{tr}kenari",
+        "usage": "{tr}saka",
     },
 )
 async def _(event):
     "animation command"
-    event = await edit_or_reply(event, "kenari")
-    await event.edit("BANG KALO MAKAN BUAH KENARI")
+    event = await edit_or_reply(event, "saka")
+    await event.edit("DUA TIGA ADUDU MAKAN TERI")
     await asyncio.sleep(3)
     await event.edit("CAKEP...")
     await asyncio.sleep(0.5)
-    await event.edit("JANGAN DIMAKAN SAMA BIJINYA")
+    await event.edit("MAKANNYA SAMBIL LIAT PETA")
     await asyncio.sleep(3)
     await event.edit("CAKEP...")
     await asyncio.sleep(0.5)
-    await event.edit("NGAPAIN LU BERANI KEMARI")
+    await event.edit("KALO LU EMANG JAGOAN DIMARI")
     await asyncio.sleep(3)
     await event.edit("CAKEP...")
     await asyncio.sleep(0.5)
-    await event.edit("APA MAKSUD DAN TUJUANNYA")
+    await event.edit("NIH KENALIN NIH JAGONYA SAMBUNG KATA")
     await asyncio.sleep(3)
-    await event.edit("CAKEP...😎😎😎")
+    await event.edit("CHUAKSS...😎😎😎")
 
 
 @tod.tod_cmd(
